@@ -35,7 +35,7 @@ public class FbEndpoint {
         try {
             log.info("Received Web Hook request, {}", httpEntity.getBody());
 
-            MessengerClient messengerClient = new MessengerClient("EAABkraH3fg4BAJgGB6NwmPsvL8EGmZAN1cGMnrDHV9o5FHRLi2WTuixMLPisqNQKoe1eBfUxLob1wRNQpW3f1j2rNkcuwK3eyplJwdftKGvZCU0pwW99bdc9CuDeO2SXCm2pFKF8GKjgqQZAAND7tbNAMANbsNZB3PKgTz84VgZDZD");
+            MessengerClient messengerClient = new MessengerClient("EAABkraH3fg4BAKtZCqmjwIhJyI78uNMZAST0lyYv7heKDOlVRQggJTrigo54JpU5jpSkA6m9xc8q9N08x0QB3BAqaRkwJCRIAvbJYTXyItd5w4ZAwilUu5EJBqPdIsE3uBOFG2gnGQXNZCrmMLxEM0U5LwtviBvV9Drd9GSXYwZDZD");
 
             String json = new Gson().toJson(httpEntity.getBody());
             Callback callback = Callback.parse(json);
